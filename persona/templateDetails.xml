@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+  version="1.0.0"
+  type="template"
+  client="site">
+  <name>persona</name>
+  <creationDate>30 Dec 2016</creationDate>
+  <author>Irfan</author>
+  <authorEmail>irfanullah.ilab@gmail.com</authorEmail>
+  <authorUrl>http://www.innovisionlab.com</authorUrl>
+  <copyright>Copyright (C) 2016 Open Source Matters, Inc. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <version>1.0.0</version>
+  <description>
+    <![CDATA[<link href="../templates/persona/css/admin.css" rel="stylesheet" type="text/css" media="all" /> 
+      <div class="templateinfo"><h3><strong>Persona Description</strong></h3>
+      <img src="../templates/persona/images/template.png" border="0" title="" alt=""/>
+      <p>Template Links</p>
+      <p>Template Setup Guide <a href="#" target="_blank">Read Now</a><br />  
+      For Tutorials Click Here <a href="#" target="_blank">Joomla Tutorials</a><br />
+      Follow us on Facebook <a href="#" target="_blank">Persona Facebook</a>
+      <br /></p></div> ]]>
+  </description>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_persona.ini</language>
+    <language tag="en-GB">en-GB/en-GB.tpl_persona.sys.ini</language>
+  </languages>
+  <files>
+    <folder>css</folder>
+    <folder>icon-fonts</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+    <filename>index.html</filename>
+    <filename>error.php</filename>
+    <filename>index.php</filename>
+    <filename>templateDetails.xml</filename>
+    <filename>template_preview.png</filename>
+    <filename>template_thumbnail.png</filename>
+    <filename>favicon.png</filename>
+    <filename>apple-touch-icon-57x57-precomposed.png</filename>
+    <filename>apple-touch-icon-72x72-precomposed.png</filename>
+    <filename>apple-touch-icon-114x114-precomposed.png</filename>
+    <filename>apple-touch-icon-144x144-precomposed.png</filename>
+  </files>
+  <positions>
+    <position>about</position>
+    <position>skill</position>
+    <position>work</position>
+    <position>experience</position>
+    <position>clients</position>
+    <position>contact</position>
+    <position>menu</position>
+
+  </positions>
+  <config>
+    <fields name="params">
+      
+      <fieldset name="advanced">
+
+        <field name="main_logo" type="media"
+          label="Logo" description="Please choose an image. If you do not want to display a logo, click on Clear and leave the field blank." />
+        <field name="copyright" type="text" default="" 
+          label="Copyright text" 
+          description="Put your copyright text here, it will be displayed at the bottom" />
+        <field name="home_layout" type="radio" class="btn-group" default="light" label="Layout Option" description="Template layout option that differentiate the page.">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </field>
+        <field name="displayspacer1" type="spacer" label="Features" class="text"/>
+        <field name="color_theme" type="filelist" default="ruby-red.css" label="Theme Color" description="" 
+          directory="templates/persona/css/colors/" hide_default="true" filter="\.css" stripext="true" />
+        <field name="enable_loader" type="radio" default="1"  class="btn-group" label="Enable Page Loader" description="Whether to enable Page Loader eihter at all pages or none.">
+          <option value="1">JYes</option>
+          <option value="0">JNo</option>
+        </field>
+        <field name="displayspacer2" type="spacer" label="SEO" class="text"/>
+        <field name="headTags" type="textarea" default="" label="Head Scripts" description="Insert custom script like Google Analytics, custom javascript and CSS." filter="raw" />
+      </fieldset>
+      <fieldset name="TPL_BANNER">
+         <field name="banner_heading" type="text" default="introduction" label="Small Heading" 
+          description="Enter small heading, it will be display on homepage" />
+           <field name="banner_desc" type="textarea" rows="5" cols="10" default="Hi! I am Persona. Designer and Art Director. Based in New York." filter="raw"  col="2" label="Large Heading" 
+          description="Enter Large heading, it will be display on homepage" />
+          <field name="banner_image" type="media"
+          label="Image" description="Please add banner image, it will be display on homepage" />
+      </fieldset>
+      <fieldset name="TPL_SOCIAL_LBL">
+        <field name="social" type="radio" label="Show Social Menu" description="Select if you want menu on/off" default="1" checked="checked" class="btn-group">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="facebook_url" type="text" size="200" default="" label="Facebook URL" description="Facebook URL" />
+        <field name="twitter_url" type="text" size="200" default="" label="Twitter URL" description="Twitter URL" />
+        <field name="google_plus_url" type="text" size="200" default="" label="Google Plus URL" description="Google Plus URL" />
+        <field name="youtube_url" type="text" size="200" default="" label="Youtube URL" description="Youtube URL" />
+        <field name="dribbble_url" type="text" size="200" default="" label="Dribbble URL" description="Dribbble URL" />
+        <field name="behance_url" type="text" size="200" default="" label="Behance URL" description="Behance URL" />
+        <field name="instagram_url" type="text" size="200" default="" label="Instagram URL" description="Instagram URL" />
+        <field name="linkedin_url" type="text" size="200" default="" label="Linkedin URL" description="Linkedin URL" />
+      </fieldset>
+
+    </fields>
+  </config>
+</extension>
